@@ -20,3 +20,97 @@ html {
 body {
   margin: 8px;
   padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.dino-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dino:nth-child(2) {
+  display: none;
+}
+
+.dino:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .dino:nth-child(2) {
+    display: block;
+    width: 50%;
+  }
+
+  .dino:nth-child(4) {
+    display: block;
+    width: 50%;
+  }
+
+  .dino {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino {
+    display: block;
+    width: 33%;
+  }
+
+  .dino:first-child {
+    display: none;
+  }
+
+  .dino:nth-child(2) {
+    display: block;
+    width: 33%;
+  }
+
+  .dino:nth-child(3) {
+    display: block;
+    width: 33%;
+  }
+
+  .dino:nth-child(4) {
+    display: block;
+    width: 33%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .dino {
+    display: block;
+    width: 25%;
+  }
+
+  .dino:first-child {
+    display: block;
+    width: 25%;
+  }
+
+  .dino:nth-child(2) {
+    display: block;
+    width: 25%;
+  }
+
+  .dino:nth-child(3) {
+    display: block;
+    width: 25%;
+  }
+
+  .dino:nth-child(4) {
+    display: block;
+    width: 25%;
+  }
+
+}
